@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-400 p-10">
+    <div class="bg-white rounded p-2 max-w-sm mx-auto">
+        <h4 class="font-semibold text-xs">Book Library</h4> 
+        <form class="space-y-2 mt-2">
+            <input type="text" placeholder="Book Tittle" class="bg-gray-100 rounded px-2 py-1 w-full text-xs" id="title" required>
+            <input type="text" placeholder="Auther Name" class="bg-gray-100 rounded px-2 py-1 w-full text-xs" id="name" required>
+            <button type="submit" class="px-2 py-0 bg-orange-500 rounded uppercase font-semibold text-xs text-white">Save</button>
+        </form>  
+    </div>
+    <div class="bg-white rounded p-2 max-w-sm mx-auto space-y-2 mt-2">
+        <h4 class="font-semibold text-xs">Added Books<span id="totalBooks">(0)</span></h4> 
+        <ul id="bookList">
+              
+        </ul>
+    </div>
+    
+    <script src="./Data/book.js"></script>
+    <script src="./Data/lib.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
